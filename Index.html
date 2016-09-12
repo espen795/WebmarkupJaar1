@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<!-- Multiline comment -->
+	<!-- 
+	TO DO LIST:
+	
+	2016-09-12
+	1. Tabel met opmaak, colspan of rowspan, bordercollapse en border-spacing
+	2. Sematiek, ook echt tabel data bevatten
+	3. Lijst met sublijsten
+	4. Lijst fictiefe contactgegevens
+	5. definitie lijst dl
+	6. Uitklap menu hz vt
+	
+	-->
 	
 	<head>
 		<meta charset="utf-8" />
 		<meta name="description" content="Testsite Webmarkup">
-		<meta name="keywords" content="HTML, CSS,Web, Markup, School, Inholland">
+		<meta name="keywords" content="HTML, CSS, Web, Markup, School, Inholland">
 		<meta name="author" content="Espen Lindhout">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-height, initial-scale=1.0">
 		
 		<title>Oefenpagina</title>
 	</head>
 	
-	
+
 	<body>
 	
 	<header>
@@ -25,11 +38,22 @@
 	alt="Logo van HTML5 en CSS3 door W3C"
 	id="headerimg"
 	/>
-	
 	</header>
-	
+
 	<nav>
-	
+		<ul id="lijst">
+			<li>
+			<a href="/html.html">Informatie HTML</a>
+			</li>
+			
+			<li>
+			<a href="/css.html">Informatie CSS3</a>
+			</li>
+			
+			<li>
+			<a href="/about.html">About page</a>
+			</li>
+		</ul>
 	</nav>
 	
 	<main>
@@ -49,10 +73,33 @@
 	
 	<em>Emphasized text</em>
 	
-	<aside id="links">
+	<table>
+		<thead>
+			<tr>
+			<th colspan="4">Vroeger</th>
+			<th>Huidig</th>
+			</tr>
+		</thead>
+		<tr class="tr1">
+			<td>1995</td>
+			<td>1997</td>
+			<td>1998</td>
+			<td>1999</td>
+			<td>2014</td>
+		</tr>
+		<tr class="tr1">
+			<td>HTML 2.0</td>
+			<td>HTML 3.2</td>
+			<td>HTML 4.0</td>
+			<td>HTML 4.01</td>
+			<td>HTML5</td>
+		</tr>
+	</table>
+	
+<aside id="links">
 	<a href="http://www.w3schools.com/html/html_links.asp" target="_blank">w3schools html links</a>
-	<a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank">Wikipedia</a>
-	<a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">Wikipedia: html5 pagina</a>
+	<a href="https://en.wikipedia.org/wiki/main_page" target="_blank">wikipedia</a>
+	<a href="https://en.wikipedia.org/wiki/html5" target="_blank">wikipedia: html5 pagina</a>
 	</aside>
 	
 	<img 
@@ -60,12 +107,10 @@
 	title="HTML5 logo"
 	alt="Logo van HTML5 door W3C"
 	id="html5img"
-	/>
+	/> 
 	
 	</main>
 	
 	</body>
 
 </html>
-
-<!-- meta, title, p, em, strong, img, src, h1, h2 , a en href. -->
