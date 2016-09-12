@@ -5,7 +5,6 @@ html
 	padding : 0;
 	border : 0;
 	height: 100%;
-	
 }
 
 body
@@ -18,6 +17,7 @@ body
 
 header
 {
+	/* Hier staat de h1 pagina titel in en het logo */
 	height: 4vw;
 	display: block;
 	background-color: #A01818;
@@ -25,6 +25,7 @@ header
 
 nav
 {
+	/* De navigatie balk in ingevouwen positie */
 	position: absolute;
 	margin : 0;
 	padding : 0;
@@ -36,7 +37,8 @@ nav
 
 nav:hover 
 {
-    position: absolute;
+    /* Dit vouwd de linker navigatie balk uit als de muis er overheen beweegd */
+	position: absolute;
 	margin: 0px;
 	background-color: #BDBDBD;
 	width: 24vw;
@@ -48,6 +50,7 @@ nav:hover
 
 nav ul
 {
+	/* Opmaak van de tabel in de linker navigatie balk */
 	padding: 0.6vw;
 	margin: 2vw 0px 0px 2vw;
 	width: 19vw;
@@ -70,7 +73,7 @@ nav ul li
 
 nav ul li a
 {
-	/* De link */
+	/* De links in de linker navigatie balk */
 	display: inline-block;
 	position: absolute;
 	padding-top: 0.8vw;
@@ -96,6 +99,7 @@ nav:hover #lijst
 
 nav h1
 {
+	/* Stuurt de tekst "menu" aan */
 	transform: rotate(270deg);
 	font-size: 1.5vw;
 	position: relative;
@@ -105,7 +109,7 @@ nav h1
 
 nav:hover #h1hover
 {
-	/* Als de nav geopend is de titel verplaatsen. */
+	/* Als de nav geopend is de tekst "menu" verplaatsen. */
 	transform: rotate(0deg);
 	font-size: 2vw;
 	position: relative;
@@ -114,6 +118,7 @@ nav:hover #h1hover
 }
 
 .c-hamburger {
+	/* Onderdeel van het "menu icoon", dit vormt het buiten blok */
   background-color: #FF8000;
   display: block;
   position: relative;
@@ -137,6 +142,7 @@ nav:hover #h1hover
 }
 
 .c-hamburger span {
+	/* Onderdeel van het "menu icoon", dit vormt de bovenste binnenlijn */
   display: block;
   position: absolute;
   top: 1.2vw;
@@ -148,6 +154,7 @@ nav:hover #h1hover
 
 .c-hamburger span::before,
 .c-hamburger span::after {
+    /* Onderdeel van het "menu icoon", dit vormt de onderste 2 binnenlijnen */
   position: absolute;
   display: block;
   left: 0;
@@ -158,10 +165,12 @@ nav:hover #h1hover
 }
 
 .c-hamburger span::before {
+	/* Onderdeel van het "menu icoon", dit vormt de afstand tussen de lijnen */
   top: -0.78vw;
 }
 
 .c-hamburger span::after {
+	/* Onderdeel van het "menu icoon", dit vormt de afstand tussen de lijnen */
   bottom: -0.78vw;
 }
 
@@ -179,7 +188,6 @@ main
 aside
 {
 	padding-top: 20px;
-	
 }
 
 table
@@ -206,6 +214,7 @@ td
 
 .tr1:hover 
 {
+	/* verzorgd de kleurverandering van de onderste tabel, maar niet de bovenste met titels */
 	background-color: #f5f5f5
 }
 
@@ -287,6 +296,7 @@ h6
 
 #links
 {
+	/* Dit zijn de links in de footer, pre-line verzorgd de nieuwe lijnen per link */
 	white-space: pre-line;
 	position: relative;
 	position: absolute;
@@ -316,11 +326,3 @@ strong
 	font-family: verdana;
 	font-size: 14px;	
 }
-
-/* .link
-{
-	height: 100%;
-	display: block;
-	cursor: pointer;
-}
- */
