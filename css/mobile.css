@@ -1,0 +1,328 @@
+html
+{
+	background-color: #e6f7ff;
+	margin : 0;
+	padding : 0;
+	border : 0;
+	height: 100%;
+}
+
+body
+{
+	margin : 0;
+	padding : 0;
+	border : 0;
+	height: 100%;
+}
+
+header
+{
+	/* Hier staat de h1 pagina titel in en het logo */
+	height: 4vw;
+	display: block;
+	background-color: #A01818;
+}
+
+nav
+{
+	/* De navigatie balk in ingevouwen positie */
+	position: absolute;
+	margin : 0;
+	padding : 0;
+	border : 0;
+	background-color: #BDBDBD;
+	width: 3.4%;
+	height: 92%;
+}
+
+nav:hover 
+{
+    /* Dit vouwd de linker navigatie balk uit als de muis er overheen beweegd */
+	position: absolute;
+	margin: 0px;
+	background-color: #BDBDBD;
+	width: 24vw;
+	height: 92%;
+	opacity: 0%;
+	display: block;
+	z-index: 1;
+}
+
+nav ul
+{
+	/* Opmaak van de tabel in de linker navigatie balk */
+	padding: 0.6vw;
+	margin: 2vw 0px 0px 2vw;
+	width: 19vw;
+	display: none;
+    position: absolute;
+    background-color: #CEF6F5;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+nav ul li 
+{
+    /* Dit is de daadwerkelijke lijst */
+	margin-top: 0.6vw;
+	background-color: #585858;
+	border: 0.2vw solid #FFFFFF;
+	height: 2.6vw;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a
+{
+	/* De links in de linker navigatie balk */
+	display: inline-block;
+	position: absolute;
+	padding-top: 0.8vw;
+	padding-left: 0.8vw;
+	color: #FFFFFF;
+	height: 2.3vw;
+	width: 90%;
+	text-decoration: none;
+	font-size: 1vw;
+}
+
+nav ul li:hover
+{
+	/* hover van de lijst */
+	background-color: #6E6E6E;
+}
+
+nav:hover #lijst 
+{
+    /* plaatst de lijst met links in de nav balk on mouse over */
+	display: block;
+}
+
+nav h1
+{
+	/* Stuurt de tekst "menu" aan */
+	transform: rotate(270deg);
+	font-size: 1.5vw;
+	position: relative;
+	margin-top: 20vw;
+	margin-left: 0.5vw;
+}
+
+nav:hover #h1hover
+{
+	/* Als de nav geopend is de tekst "menu" verplaatsen. */
+	transform: rotate(0deg);
+	font-size: 2vw;
+	position: relative;
+	margin-top: -2.5vw;
+	margin-left: 6vw;
+}
+
+.c-hamburger {
+	/* Onderdeel van het "menu icoon", dit vormt het buiten blok */
+  background-color: #FF8000;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin-left: 0.38vw;
+  margin-top: 0.38vw;
+  margin-right: 0;
+  padding: 0px;
+  width: 2.7vw;
+  height: 2.7vw;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+}
+
+.c-hamburger:focus {
+  outline: none;
+}
+
+.c-hamburger span {
+	/* Onderdeel van het "menu icoon", dit vormt de bovenste binnenlijn */
+  display: block;
+  position: absolute;
+  top: 1.2vw;
+  left: 0.3vw;
+  right: 0.3vw;
+  height: 0.3vw;
+  background: white;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+    /* Onderdeel van het "menu icoon", dit vormt de onderste 2 binnenlijnen */
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 0.3vw;
+  background: white;
+  content: "";
+}
+
+.c-hamburger span::before {
+	/* Onderdeel van het "menu icoon", dit vormt de afstand tussen de lijnen */
+  top: -0.78vw;
+}
+
+.c-hamburger span::after {
+	/* Onderdeel van het "menu icoon", dit vormt de afstand tussen de lijnen */
+  bottom: -0.78vw;
+}
+
+main
+{
+	margin-left : 4%;
+	border : 0;	
+	position: relative;
+	padding-top: 1%;
+	padding-bottom: 0px;
+	padding-left: 2%;
+	min-height: 90%;
+}
+
+aside
+{
+	padding-top: 20px;
+}
+
+table
+{
+	border: 1px solid black;
+	margin-top: 40px;
+	width: 60%;
+	border-collapse: collapse;
+}
+
+th
+{
+	border-bottom: 2px solid black;
+	padding: 10px;
+	text-align: center;
+}
+
+td
+{
+	border-bottom: 1px solid black;
+	padding: 10px;
+	text-align: left;
+}
+
+.tr1:hover 
+{
+	/* verzorgd de kleurverandering van de onderste tabel, maar niet de bovenste met titels */
+	background-color: #f5f5f5
+}
+
+#html5img 
+{
+    height: 200px;
+    width: 200px;
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+}
+
+/* Hier onder alle formaten headers */
+h1
+{
+	color: black;
+	text-align: left;
+	font-family: verdana;
+	font-size: 34px;
+}
+
+h2
+{
+	color: black;
+	text-align: left;
+	font-family: verdana;
+	font-size: 30px;
+}
+
+h3
+{
+	color: black;
+	text-align: left;
+	font-family: verdana;
+	font-size: 26px;
+}
+
+h4
+{
+	color: black;
+	text-align: left;
+	font-family: verdana;
+	font-size: 22px;
+}
+
+h5
+{
+	color: black;
+	text-align: left;
+	font-family: verdana;
+	font-size: 18px;
+}
+
+h6
+{
+	color: black;
+	text-align: left;
+	font-family: verdana;
+	font-size: 16px;
+}
+
+#headerh1
+{
+	position: relative;
+	text-align: center;
+	padding-top: 1vw;
+	margin: 0;
+	font-size: 1.8vw;
+}
+
+#headerimg
+{
+    height: 3vw;
+    width: 4.622vw;
+	position: absolute;
+	left: 1.5vw;
+	top: 0.5vw;
+}
+
+#links
+{
+	/* Dit zijn de links in de footer, pre-line verzorgd de nieuwe lijnen per link */
+	white-space: pre-line;
+	position: relative;
+	position: absolute;
+	bottom: 5%;
+}
+
+p
+{
+	color: black;
+	text-align: left;
+	font-family: verdana;
+	font-size: 14px;
+}
+
+em
+{
+	color: black;
+	text-align: left;
+	font-family: verdana;
+	font-size: 14px;	
+}
+
+strong
+{
+	color: black;
+	text-align: left;
+	font-family: verdana;
+	font-size: 14px;	
+}
