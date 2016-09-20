@@ -101,20 +101,22 @@ nav h1
 {
 	/* Stuurt de tekst "menu" aan */
 	transform: rotate(270deg);
-	font-size: 1.5vw;
+	font-size: 1.3vw;
 	position: relative;
 	margin-top: 20vw;
 	margin-left: 0.5vw;
+	color: #fff;
 }
 
 nav:hover #h1hover
 {
 	/* Als de nav geopend is de tekst "menu" verplaatsen. */
 	transform: rotate(0deg);
-	font-size: 2vw;
+	font-size: 1.5vw;
 	position: relative;
-	margin-top: -2.5vw;
+	margin-top: -2vw;
 	margin-left: 6vw;
+	color: #fff;
 }
 
 .c-hamburger {
@@ -284,7 +286,7 @@ h6
 	text-align: center;
 	padding-top: 1vw;
 	margin: 0;
-	font-size: 1.8vw;
+	font-size: 1.5vw;
 }
 
 #headerimg
